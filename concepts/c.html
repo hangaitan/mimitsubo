@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Concept C — Blush Editorial</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,300;1,9..144,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#F7E6E0; --ink:#3B1F1A; --muted:#8A6159; --cherry:#B8322A; --cream:#FFF7F2; --g:clamp(1.25rem,5vw,3rem); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 1rem/1.65 "DM Sans",system-ui,sans-serif; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:1.2rem var(--g); }
+  .mark { font:italic 500 1.35rem "Fraunces",serif; }
+  .mark span { color:var(--cherry); }
+  .pill { border:1px solid var(--ink); border-radius:99px; padding:.3rem .9rem; font-size:.8rem; }
+  .hero { max-width:72rem; margin:0 auto; padding:clamp(2.5rem,9vw,6rem) var(--g) clamp(3rem,9vw,6rem); position:relative; }
+  .issue { font-size:.75rem; letter-spacing:.25em; text-transform:uppercase; color:var(--muted); }
+  h1 { font:300 clamp(3.2rem,12vw,8rem)/.92 "Fraunces",serif; font-style:italic; letter-spacing:-.03em; margin:.6rem 0 0; }
+  h1 b { font-weight:500; color:var(--cherry); }
+  .round { position:absolute; right:var(--g); bottom:1.5rem; width:clamp(6rem,18vw,9rem); aspect-ratio:1; border-radius:50%; background:var(--cherry); color:var(--cream); display:grid; place-items:center; text-align:center; font:italic 400 clamp(.85rem,2.2vw,1.05rem)/1.2 "Fraunces",serif; transform:rotate(-10deg); padding:1rem; }
+  .strip { background:var(--ink); color:var(--cream); padding:.9rem var(--g); display:flex; gap:2.5rem; overflow:hidden; white-space:nowrap; font:italic 400 1.3rem "Fraunces",serif; }
+  .strip span::after { content:"✦"; margin-left:2.5rem; font-style:normal; font-size:.8rem; vertical-align:.2em; }
+  section { max-width:72rem; margin:0 auto; padding:clamp(3rem,9vw,6rem) var(--g); }
+  h2 { font:400 clamp(2rem,6vw,3.4rem)/1 "Fraunces",serif; letter-spacing:-.02em; margin:0 0 1.5rem; }
+  h2 i { color:var(--cherry); }
+  .cols { columns:2 18rem; column-gap:3rem; }
+  .cols p { margin:0 0 1em; }
+  .cols p:first-child::first-letter { float:left; font:400 4.2rem/.8 "Fraunces",serif; color:var(--cherry); margin:.35rem .5rem 0 0; }
+  .grid2 { display:grid; gap:2rem; align-items:start; }
+  @media (min-width:48rem){ .grid2 { grid-template-columns:1fr 1.1fr; } }
+  .ear { aspect-ratio:3/4; border-radius:999px 999px 24px 24px; background:var(--cream); display:grid; place-items:center; color:var(--muted); font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; max-width:20rem; }
+  .points { list-style:none; margin:0; padding:0; counter-reset:p; }
+  .points li { counter-increment:p; display:flex; align-items:baseline; gap:1rem; padding:.9rem 0; border-bottom:1px solid #3B1F1A33; font:400 1.35rem "Fraunces",serif; }
+  .points li::before { content:counter(p,decimal-leading-zero); font:500 .75rem "DM Sans",sans-serif; color:var(--cherry); }
+  .points small { margin-left:auto; font:italic 400 1rem "Fraunces",serif; color:var(--muted); }
+  .kit { list-style:none; margin:0; padding:0; display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); }
+  .kit li { background:var(--cream); border-radius:22px; padding:1.5rem; }
+  .kit h3 { font:italic 500 1.35rem "Fraunces",serif; margin:0 0 .4rem; }
+  .kit p { margin:0; font-size:.92rem; color:#5b3a33; }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">ear seeding <span>kits</span></div>
+  <span class="pill">Mimitsubo 耳つぼ</span>
+</header>
+
+<div class="hero">
+  <p class="issue">The little ritual · N°01</p>
+  <h1>Tiny seeds,<br /><b>a softer</b> day.</h1>
+  <div class="round">handmade<br />with 24k<br />gold seeds</div>
+</div>
+
+<div class="strip"><span>calm</span><span>glow</span><span>rest</span><span>ritual</span><span>calm</span><span>glow</span></div>
+
+<section>
+  <h2>What is <i>mimitsubo?</i></h2>
+  <div class="cols">
+    <p>Your ear is a tiny map. For centuries, East Asian traditions have pressed points on the ear that are linked to different parts of the body. In the 1950s a French doctor, Paul Nogier, drew the ear map the West still uses today.</p>
+    <p>In Japan the idea became something playful: small seeds or 24k gold pellets on a clear patch, worn like ear jewellery and pressed a few times a day. It is now one of the most loved self-care rituals in Tokyo — and it is starting to bloom in Seoul, too.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The <i>ear map</i></h2>
+  <div class="grid2">
+    <div class="ear">ear image</div>
+    <ol class="points">
+      <li>Shen Men <small>calm</small></li>
+      <li>Point Zero <small>balance</small></li>
+      <li>Stomach <small>lightness</small></li>
+      <li>Hunger <small>mindful cravings</small></li>
+      <li>Jaw <small>soft jaw</small></li>
+      <li>Eye <small>bright eyes</small></li>
+      <li>Cheek <small>fresh face</small></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>What's <i>inside</i></h2>
+  <ul class="kit">
+    <li><h3>Ear seed patches</h3><p>24k gold-plated seeds and tiny crystals. 10 or 20 per kit.</p></li>
+    <li><h3>Cleansing wipe</h3><p>Clean your ear so the patch stays put.</p></li>
+    <li><h3>Copper point pen</h3><p>Press gently to find your point.</p></li>
+    <li><h3>Little guide</h3><p>An illustrated map and step-by-step card.</p></li>
+  </ul>
+</section>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Concept A — Washi</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#F5F0E8; --ink:#2B2421; --muted:#7A6E66; --shu:#D9442B; --line:#E2D9CC; --g:clamp(1.25rem,5vw,3rem); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 1rem/1.8 "Zen Kaku Gothic New",system-ui,sans-serif; letter-spacing:.02em; }
+  .serif { font-family:"Shippori Mincho",serif; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:1.2rem var(--g); border-bottom:1px solid var(--line); }
+  .mark { display:flex; align-items:center; gap:.7rem; font:600 .95rem "Shippori Mincho",serif; letter-spacing:.18em; text-transform:lowercase; }
+  .hanko { width:1.9rem; height:1.9rem; display:grid; place-items:center; background:var(--shu); color:#fff; border-radius:3px; font:600 1.05rem "Shippori Mincho",serif; letter-spacing:0; }
+  nav { display:flex; gap:1.4rem; font-size:.8rem; color:var(--muted); letter-spacing:.14em; text-transform:uppercase; }
+  @media (max-width:40rem){ nav { display:none; } }
+  .hero { position:relative; padding:clamp(4rem,14vw,9rem) var(--g) clamp(3rem,10vw,6rem); max-width:68rem; margin:0 auto; }
+  .vert { position:absolute; right:var(--g); top:clamp(3rem,10vw,6rem); writing-mode:vertical-rl; font:600 clamp(1.6rem,5vw,2.6rem) "Shippori Mincho",serif; color:var(--shu); letter-spacing:.3em; }
+  h1 { font:400 clamp(2.6rem,8vw,5.4rem)/1.12 "Shippori Mincho",serif; margin:0; max-width:14ch; }
+  .rule { width:3rem; height:1px; background:var(--ink); margin:2.2rem 0 1.4rem; }
+  .tags { font-size:.8rem; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); }
+  section { max-width:68rem; margin:0 auto; padding:clamp(3rem,9vw,6rem) var(--g); border-top:1px solid var(--line); display:grid; gap:1.5rem 3rem; }
+  @media (min-width:48rem){ section { grid-template-columns:14rem 1fr; } }
+  .num { font:600 .8rem "Shippori Mincho",serif; letter-spacing:.2em; color:var(--shu); }
+  h2 { font:400 clamp(1.7rem,4vw,2.3rem)/1.2 "Shippori Mincho",serif; margin:.4rem 0 0; }
+  p { margin:0 0 1em; max-width:38rem; color:#4a403b; }
+  .points { list-style:none; margin:0; padding:0; display:grid; gap:0; }
+  .points li { display:grid; grid-template-columns:2.2rem 1fr auto; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--line); align-items:baseline; }
+  .points li span:first-child { font-family:"Shippori Mincho",serif; color:var(--shu); }
+  .points b { font-weight:500; }
+  .points i { font-style:normal; color:var(--muted); font-size:.85rem; }
+  .ear { aspect-ratio:3/4; max-width:18rem; border:1px solid var(--line); display:grid; place-items:center; color:var(--muted); font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; }
+  .kit { list-style:none; margin:0; padding:0; display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(12rem,1fr)); }
+  .kit h3 { font:600 1.05rem "Shippori Mincho",serif; margin:0 0 .4rem; }
+  .kit p { font-size:.9rem; }
+  .dot { width:.55rem; height:.55rem; border-radius:50%; background:var(--shu); display:inline-block; margin-bottom:.9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark"><span class="hanko">耳</span>ear seeding kits</div>
+  <nav><span>Ear map</span><span>The kit</span><span>How to</span></nav>
+</header>
+
+<div class="hero">
+  <div class="vert">耳つぼ</div>
+  <h1>Tiny seeds, a softer day.</h1>
+  <div class="rule"></div>
+  <p class="tags">Calm · Glow · Rest · Ritual</p>
+</div>
+
+<section>
+  <div><p class="num">01</p><h2>What is mimitsubo?</h2></div>
+  <div>
+    <p>Your ear is a tiny map. For centuries, East Asian traditions have pressed points on the ear that are linked to different parts of the body. In the 1950s a French doctor, Paul Nogier, drew the ear map the West still uses today.</p>
+    <p>In Japan the idea became something playful: small seeds or 24k gold pellets on a clear patch, worn like ear jewellery and pressed a few times a day.</p>
+  </div>
+</section>
+
+<section>
+  <div><p class="num">02</p><h2>The ear map</h2><div class="ear" style="margin-top:2rem">ear image</div></div>
+  <ol class="points">
+    <li><span>1</span><b>Shen Men</b><i>calm</i></li>
+    <li><span>2</span><b>Point Zero</b><i>balance</i></li>
+    <li><span>3</span><b>Stomach</b><i>lightness</i></li>
+    <li><span>4</span><b>Hunger</b><i>mindful cravings</i></li>
+    <li><span>5</span><b>Jaw</b><i>soft jaw</i></li>
+    <li><span>6</span><b>Eye</b><i>bright eyes</i></li>
+    <li><span>7</span><b>Cheek</b><i>fresh face</i></li>
+  </ol>
+</section>
+
+<section>
+  <div><p class="num">03</p><h2>What's inside</h2></div>
+  <ul class="kit">
+    <li><span class="dot"></span><h3>Ear seed patches</h3><p>24k gold-plated seeds and tiny crystals. 10 or 20 per kit.</p></li>
+    <li><span class="dot"></span><h3>Cleansing wipe</h3><p>Clean your ear so the patch stays put.</p></li>
+    <li><span class="dot"></span><h3>Copper point pen</h3><p>Press gently to find your point.</p></li>
+    <li><span class="dot"></span><h3>Little guide</h3><p>An illustrated map and step-by-step card.</p></li>
+  </ul>
+</section>
+</body>
+</html>

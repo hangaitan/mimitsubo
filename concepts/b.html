@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Concept B — Ritual Lab</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#F3F4EF; --ink:#1C2320; --muted:#66706A; --sage:#DDE5D8; --deep:#4E6B5C; --gold:#B8914A; --line:#D5DAD1; --g:clamp(1.25rem,5vw,3rem); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 1rem/1.6 "Inter Tight",system-ui,sans-serif; }
+  .mono { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+  header { display:flex; justify-content:space-between; align-items:center; padding:1rem var(--g); border-bottom:1px solid var(--line); }
+  .mark { font-weight:600; letter-spacing:-.01em; display:flex; align-items:center; gap:.5rem; }
+  .seed { width:.7rem; height:.7rem; border-radius:50%; background:radial-gradient(circle at 35% 35%,#F3DDA6,var(--gold) 60%,#8A6A2E); box-shadow:0 1px 2px #0003; display:inline-block; }
+  .wrap { max-width:70rem; margin:0 auto; padding:0 var(--g); }
+  .hero { display:grid; gap:2rem; padding:clamp(3.5rem,11vw,7rem) 0 clamp(2.5rem,8vw,5rem); }
+  @media (min-width:52rem){ .hero { grid-template-columns:1.3fr 1fr; align-items:end; } }
+  h1 { font:600 clamp(2.6rem,8vw,5.2rem)/1 "Inter Tight",sans-serif; letter-spacing:-.035em; margin:0; }
+  h1 em { font-style:normal; color:var(--deep); }
+  .spec { border:1px solid var(--line); border-radius:14px; background:#fff; }
+  .spec div { display:flex; justify-content:space-between; gap:1rem; padding:.8rem 1rem; border-bottom:1px solid var(--line); font-size:.92rem; }
+  .spec div:last-child { border:0; }
+  .chips { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.5rem; }
+  .chip { padding:.35rem .8rem; border-radius:99px; background:var(--sage); color:var(--deep); font-size:.85rem; font-weight:500; }
+  section { border-top:1px solid var(--line); padding:clamp(3rem,8vw,5rem) 0; }
+  h2 { font:600 clamp(1.7rem,4.5vw,2.6rem)/1.05 "Inter Tight",sans-serif; letter-spacing:-.025em; margin:.5rem 0 1.5rem; }
+  p { margin:0 0 1em; max-width:40rem; color:#3c4541; }
+  .grid2 { display:grid; gap:2rem; }
+  @media (min-width:48rem){ .grid2 { grid-template-columns:1fr 1.2fr; } }
+  .ear { aspect-ratio:3/4; max-width:20rem; border-radius:18px; background:var(--sage); display:grid; place-items:center; }
+  .points { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); gap:.6rem; }
+  .points li { background:#fff; border:1px solid var(--line); border-radius:12px; padding:.8rem 1rem; display:flex; gap:.8rem; align-items:center; }
+  .points .n { font-family:"JetBrains Mono",monospace; font-size:.8rem; width:1.7rem; height:1.7rem; border-radius:50%; background:var(--ink); color:#fff; display:grid; place-items:center; flex:none; }
+  .points small { display:block; color:var(--muted); font-size:.82rem; }
+  .kit { list-style:none; margin:0; padding:0; display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); }
+  .kit li { background:var(--bg); padding:1.4rem; }
+  .kit h3 { margin:.6rem 0 .3rem; font-size:1.05rem; font-weight:600; }
+  .kit p { font-size:.9rem; margin:0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark"><span class="seed"></span>ear seeding kits</div>
+  <span class="mono">Mimitsubo · 耳つぼ</span>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <p class="mono">Daily ritual / 01</p>
+      <h1>Tiny seeds,<br /><em>a softer day.</em></h1>
+      <div class="chips"><span class="chip">calm</span><span class="chip">glow</span><span class="chip">rest</span><span class="chip">ritual</span></div>
+    </div>
+    <div class="spec">
+      <div><span class="mono">Seeds</span><span>24k gold-plated</span></div>
+      <div><span class="mono">Per kit</span><span>10 or 20</span></div>
+      <div><span class="mono">Wear</span><span>3–5 days</span></div>
+      <div><span class="mono">Press</span><span>30 s · 3–5× a day</span></div>
+      <div><span class="mono">Made</span><span>by hand</span></div>
+    </div>
+  </div>
+
+  <section>
+    <p class="mono">02 — Origin</p>
+    <h2>What is mimitsubo?</h2>
+    <p>Your ear is a tiny map. For centuries, East Asian traditions have pressed points on the ear that are linked to different parts of the body. In the 1950s a French doctor, Paul Nogier, drew the ear map the West still uses today.</p>
+    <p>In Japan the idea became something playful: small seeds or 24k gold pellets on a clear patch, worn like ear jewellery and pressed a few times a day.</p>
+  </section>
+
+  <section>
+    <p class="mono">03 — Map</p>
+    <h2>The ear map</h2>
+    <div class="grid2">
+      <div class="ear"><span class="mono">ear image</span></div>
+      <ol class="points">
+        <li><span class="n">1</span><div>Shen Men<small>calm</small></div></li>
+        <li><span class="n">2</span><div>Point Zero<small>balance</small></div></li>
+        <li><span class="n">3</span><div>Stomach<small>lightness</small></div></li>
+        <li><span class="n">4</span><div>Hunger<small>mindful cravings</small></div></li>
+        <li><span class="n">5</span><div>Jaw<small>soft jaw</small></div></li>
+        <li><span class="n">6</span><div>Eye<small>bright eyes</small></div></li>
+        <li><span class="n">7</span><div>Cheek<small>fresh face</small></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <p class="mono">04 — Kit</p>
+    <h2>What's inside</h2>
+    <ul class="kit">
+      <li><span class="seed"></span><h3>Ear seed patches</h3><p>24k gold-plated seeds and tiny crystals. 10 or 20 per kit.</p></li>
+      <li><span class="seed"></span><h3>Cleansing wipe</h3><p>Clean your ear so the patch stays put.</p></li>
+      <li><span class="seed"></span><h3>Copper point pen</h3><p>Press gently to find your point.</p></li>
+      <li><span class="seed"></span><h3>Little guide</h3><p>An illustrated map and step-by-step card.</p></li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
